@@ -12,6 +12,7 @@
 		596AB65128B1CEC20011FF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596AB65028B1CEC20011FF7D /* Assets.xcassets */; };
 		596AB65528B1CEC20011FF7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596AB65428B1CEC20011FF7D /* Preview Assets.xcassets */; };
 		596AB65C28B1CEE90011FF7D /* HistorgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AB65B28B1CEE90011FF7D /* HistorgramView.swift */; };
+		596AB65E28B2A13B0011FF7D /* HistogramWithNumberBins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AB65D28B2A13B0011FF7D /* HistogramWithNumberBins.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		596AB65228B1CEC20011FF7D /* Charts_01.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Charts_01.entitlements; sourceTree = "<group>"; };
 		596AB65428B1CEC20011FF7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		596AB65B28B1CEE90011FF7D /* HistorgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorgramView.swift; sourceTree = "<group>"; };
+		596AB65D28B2A13B0011FF7D /* HistogramWithNumberBins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistogramWithNumberBins.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				596AB64C28B1CEC10011FF7D /* Charts_01App.swift */,
 				596AB64E28B1CEC10011FF7D /* ContentView.swift */,
 				596AB65B28B1CEE90011FF7D /* HistorgramView.swift */,
+				596AB65D28B2A13B0011FF7D /* HistogramWithNumberBins.swift */,
 				596AB65028B1CEC20011FF7D /* Assets.xcassets */,
 				596AB65228B1CEC20011FF7D /* Charts_01.entitlements */,
 				596AB65328B1CEC20011FF7D /* Preview Content */,
@@ -145,6 +148,7 @@
 				596AB64F28B1CEC10011FF7D /* ContentView.swift in Sources */,
 				596AB65C28B1CEE90011FF7D /* HistorgramView.swift in Sources */,
 				596AB64D28B1CEC10011FF7D /* Charts_01App.swift in Sources */,
+				596AB65E28B2A13B0011FF7D /* HistogramWithNumberBins.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

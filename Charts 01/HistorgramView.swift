@@ -63,26 +63,48 @@ struct SimpleHistogram: View {
                     x: .value("Range", frequency.bin),
                     y: .value("Frequency", frequency.frequency)
                 )
+//                .ann
             }
+            
         }
-        .chartLegend(.visible)
+        .chartYScale(domain: 0.0...200.0)
+        .chartYAxisLabel {
+            HStack(spacing: 4) {
+                Text("↑")
+                Text("Frequency")
+            }.offset(x: -10, y: -10)
+        }
         .chartYAxis {
-            AxisMarks(position: .leading)
-        }
-        .chartXAxis {
             AxisMarks(
-                preset: .automatic,
-                position: .bottom,
-                values: .automatic(desiredCount: 10, roundLowerBound: true, roundUpperBound: false),
+                preset: .extended,
+                position: .leading,
+                values: .automatic(
+                    desiredCount: 10, roundLowerBound: true, roundUpperBound: false
+                ),
                 stroke: .init(lineWidth: 1)
             )
         }
-//        .chartXScale(domain: 0 ... 1.99)
+        .chartXAxis {
+            AxisMarks(values: .stride(by: 0.1)) { value in
+                AxisTick(centered: true, length: 13, stroke: .init(lineWidth: 1))
+//                AxisValueLabel(frequencies[value.index].bin.higher.description)
+                AxisValueLabel(value.index.description)
+            }
+            //            AxisMarks(
+//                preset: .aligned,
+//                position: .automatic,
+//                values: .automatic(
+//                    desiredCount: 10, roundLowerBound: true, roundUpperBound: false
+//                ),
+//                stroke: .init(lineWidth: 0)
+//            )
+        }
     }
     
     var body: some View {
         VStack {
             chart
+                .padding(32)
         }
     }
 }
@@ -92,7 +114,6 @@ struct HistogramView_Previews: PreviewProvider {
     static let values = (0..<1000).map { _ in
         (Double.random(in: 0..<1.0)
                 * Double.random(in: 0..<1.0))
-        
     }
     static var previews: some View {
         SimpleHistogram(
