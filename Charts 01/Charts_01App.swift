@@ -11,7 +11,7 @@ import SwiftUI
 struct Charts_01App: App {
     var body: some Scene {
         WindowGroup {
-            HistogramWithNumberBins.sample()
+            D3Histogram.sample()
         }
     }
 }
