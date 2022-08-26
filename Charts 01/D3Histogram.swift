@@ -8,6 +8,35 @@
 import SwiftUI
 import Charts
 
+extension View {
+    var d3YAxis: some View {
+        chartYAxis {
+            AxisMarks(
+                preset: .extended,
+                position: .leading,
+                values: .automatic(
+                    desiredCount: 11, roundLowerBound: true, roundUpperBound: false
+                )
+            ) { _ in
+                AxisValueLabel()
+                    .font(.caption2)
+                AxisTick(centered: false, length: 8, stroke: .init(lineWidth: 0.7))
+                AxisGridLine(centered: true, stroke: .init(lineWidth: 0.5))
+                    .foregroundStyle(.gray.opacity(0.4))
+            }
+        }
+    }
+
+    func d3YAxisLabel(_ text: String) -> some View {
+        chartYAxisLabel {
+            HStack(spacing: 4) {
+                Text("↑")
+                Text(text)
+            }.offset(x: -10, y: -10)
+        }
+    }
+}
+
 /// Recreating the two Histograms from the introductory [D3-Charts](https://observablehq.com/@d3/charts?collection=@d3/charts) notebook.
 struct D3Histogram: View {
     enum Style: String, CaseIterable, Identifiable {
@@ -22,7 +51,7 @@ struct D3Histogram: View {
     private var markColor: Color {
         switch style {
         case .simple: return colorScheme == .dark ? .white : .black
-        case .wide: return Color(hex: "4682b4")
+        case .wide: return Color.steelBlue
         }
     }
 
@@ -50,27 +79,8 @@ struct D3Histogram: View {
             .foregroundStyle(markColor)
         }
         .chartYScale(domain: 0.0...110.0)
-        .chartYAxisLabel {
-            HStack(spacing: 4) {
-                Text("↑")
-                Text("Frequency")
-            }.offset(x: -10, y: -10)
-        }
-        .chartYAxis {
-            AxisMarks(
-                preset: .extended,
-                position: .leading,
-                values: .automatic(
-                    desiredCount: 11, roundLowerBound: true, roundUpperBound: false
-                )
-            ) { _ in
-                AxisValueLabel()
-                    .font(.caption2)
-                AxisTick(centered: false, length: 8, stroke: .init(lineWidth: 0.7))
-                AxisGridLine(centered: true, stroke: .init(lineWidth: 0.5))
-                    .foregroundStyle(.gray.opacity(0.4))
-            }
-        }
+        .d3YAxisLabel("Frequency")
+        .d3YAxis
         .chartXScale(domain: 0...1.0)
         .chartXAxis {
             AxisMarks(preset: .aligned, position: .bottom, values: .stride(by: xAxisStride)) { value in
@@ -123,14 +133,14 @@ extension D3Histogram {
         return chartData
     }
 
-    static func sample() -> Self {
+    static var sample: Self {
         D3Histogram(binnedData: bins())
     }
 }
 
 struct HistogramWithNumberBins_Previews: PreviewProvider {
     static var previews: some View {
-        D3Histogram.sample()
+        D3Histogram.sample
             .frame(width: 640, height: 400)
     }
 }
@@ -159,5 +169,11 @@ extension Color {
             blue:  Double(b) / 255,
             opacity: Double(a) / 255
         )
+    }
+}
+
+extension Color {
+    static var steelBlue: Color {
+        Color(hex: "4682b4")
     }
 }

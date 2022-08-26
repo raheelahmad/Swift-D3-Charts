@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		593C9C1628B86A09005F5B16 /* aapl.csv in Resources */ = {isa = PBXBuildFile; fileRef = 593C9C1528B86A09005F5B16 /* aapl.csv */; };
+		593C9C1828B86B0C005F5B16 /* D3Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C9C1728B86B0C005F5B16 /* D3Area.swift */; };
+		593C9C1B28B86BBB005F5B16 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 593C9C1A28B86BBB005F5B16 /* SwiftCSV */; };
 		596AB64D28B1CEC10011FF7D /* Charts_01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AB64C28B1CEC10011FF7D /* Charts_01App.swift */; };
 		596AB64F28B1CEC10011FF7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AB64E28B1CEC10011FF7D /* ContentView.swift */; };
 		596AB65128B1CEC20011FF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596AB65028B1CEC20011FF7D /* Assets.xcassets */; };
@@ -17,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		593C9C1528B86A09005F5B16 /* aapl.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aapl.csv; sourceTree = "<group>"; };
+		593C9C1728B86B0C005F5B16 /* D3Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3Area.swift; sourceTree = "<group>"; };
 		596AB64928B1CEC10011FF7D /* Charts 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		596AB64C28B1CEC10011FF7D /* Charts_01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts_01App.swift; sourceTree = "<group>"; };
 		596AB64E28B1CEC10011FF7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593C9C1B28B86BBB005F5B16 /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +71,7 @@
 				596AB64C28B1CEC10011FF7D /* Charts_01App.swift */,
 				596AB64E28B1CEC10011FF7D /* ContentView.swift */,
 				596AB65D28B2A13B0011FF7D /* D3Histogram.swift */,
+				593C9C1728B86B0C005F5B16 /* D3Area.swift */,
 				593C9C1428B869FA005F5B16 /* data */,
 				596AB65028B1CEC20011FF7D /* Assets.xcassets */,
 				596AB65228B1CEC20011FF7D /* Charts_01.entitlements */,
@@ -99,6 +104,9 @@
 			dependencies = (
 			);
 			name = "Charts 01";
+			packageProductDependencies = (
+				593C9C1A28B86BBB005F5B16 /* SwiftCSV */,
+			);
 			productName = "Charts 01";
 			productReference = 596AB64928B1CEC10011FF7D /* Charts 01.app */;
 			productType = "com.apple.product-type.application";
@@ -127,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 596AB64028B1CEC10011FF7D;
+			packageReferences = (
+				593C9C1928B86BBB005F5B16 /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			productRefGroup = 596AB64A28B1CEC10011FF7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -157,6 +168,7 @@
 				596AB64F28B1CEC10011FF7D /* ContentView.swift in Sources */,
 				596AB64D28B1CEC10011FF7D /* Charts_01App.swift in Sources */,
 				596AB65E28B2A13B0011FF7D /* D3Histogram.swift in Sources */,
+				593C9C1828B86B0C005F5B16 /* D3Area.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +378,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		593C9C1928B86BBB005F5B16 /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftcsv/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		593C9C1A28B86BBB005F5B16 /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 593C9C1928B86BBB005F5B16 /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 596AB64128B1CEC10011FF7D /* Project object */;
 }

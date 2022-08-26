@@ -7,11 +7,44 @@
 
 import SwiftUI
 
+enum Example: String, View, CaseIterable, Identifiable {
+    case histogram, area
+
+    var id: String {
+        rawValue
+    }
+
+    var body: some View {
+        switch self {
+        case .histogram:
+            D3Histogram.sample
+        case .area:
+            D3Area.sample
+        }
+    }
+}
+
 @main
 struct Charts_01App: App {
+    @State private var example = Example.area
     var body: some Scene {
         WindowGroup {
-            D3Histogram.sample()
+            HSplitView {
+                List(selection: $example) {
+                    Section {
+                        ForEach(Example.allCases) {
+                            Text($0.rawValue)
+                                .tag($0)
+                        }
+                    } header: {
+                        Text("Examples")
+                    }
+                }
+                .listStyle(.sidebar)
+                .frame(width: 220)
+
+                example
+            }
         }
     }
 }
