@@ -28,7 +28,7 @@ struct D3Area: View {
     }()
     private let monthFM: DateFormatter = {
         let fm = DateFormatter()
-        fm.dateFormat = "MMM"
+        fm.dateFormat = "MMMM"
         return fm
     }()
 
@@ -46,7 +46,7 @@ struct D3Area: View {
                 .foregroundStyle(Color.steelBlue)
         }
         .chartXAxis {
-            AxisMarks(preset: .automatic, position: .bottom, values: .automatic(desiredCount: 16)) { value in
+            AxisMarks(preset: .aligned, position: .bottom, values: .automatic(desiredCount: 16)) { value in
                 AxisValueLabel(content: {
                     Text(textForDate(index: value.index, total: value.count))
                 })

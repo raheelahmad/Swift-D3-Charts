@@ -10,6 +10,8 @@
 		593C9C1628B86A09005F5B16 /* aapl.csv in Resources */ = {isa = PBXBuildFile; fileRef = 593C9C1528B86A09005F5B16 /* aapl.csv */; };
 		593C9C1828B86B0C005F5B16 /* D3Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C9C1728B86B0C005F5B16 /* D3Area.swift */; };
 		593C9C1B28B86BBB005F5B16 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 593C9C1A28B86BBB005F5B16 /* SwiftCSV */; };
+		593C9C1D28BBF5F7005F5B16 /* temperatures.csv in Resources */ = {isa = PBXBuildFile; fileRef = 593C9C1C28BBF5F7005F5B16 /* temperatures.csv */; };
+		593C9C1F28BBF60C005F5B16 /* D3BandChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C9C1E28BBF60C005F5B16 /* D3BandChart.swift */; };
 		596AB64D28B1CEC10011FF7D /* Charts_01App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AB64C28B1CEC10011FF7D /* Charts_01App.swift */; };
 		596AB64F28B1CEC10011FF7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AB64E28B1CEC10011FF7D /* ContentView.swift */; };
 		596AB65128B1CEC20011FF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596AB65028B1CEC20011FF7D /* Assets.xcassets */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		593C9C1528B86A09005F5B16 /* aapl.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aapl.csv; sourceTree = "<group>"; };
 		593C9C1728B86B0C005F5B16 /* D3Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3Area.swift; sourceTree = "<group>"; };
+		593C9C1C28BBF5F7005F5B16 /* temperatures.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = temperatures.csv; sourceTree = "<group>"; };
+		593C9C1E28BBF60C005F5B16 /* D3BandChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3BandChart.swift; sourceTree = "<group>"; };
 		596AB64928B1CEC10011FF7D /* Charts 01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Charts 01.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		596AB64C28B1CEC10011FF7D /* Charts_01App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Charts_01App.swift; sourceTree = "<group>"; };
 		596AB64E28B1CEC10011FF7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +48,7 @@
 		593C9C1428B869FA005F5B16 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				593C9C1C28BBF5F7005F5B16 /* temperatures.csv */,
 				593C9C1528B86A09005F5B16 /* aapl.csv */,
 			);
 			path = data;
@@ -69,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				596AB64C28B1CEC10011FF7D /* Charts_01App.swift */,
+				593C9C1E28BBF60C005F5B16 /* D3BandChart.swift */,
 				596AB64E28B1CEC10011FF7D /* ContentView.swift */,
 				596AB65D28B2A13B0011FF7D /* D3Histogram.swift */,
 				593C9C1728B86B0C005F5B16 /* D3Area.swift */,
@@ -155,6 +161,7 @@
 				596AB65528B1CEC20011FF7D /* Preview Assets.xcassets in Resources */,
 				596AB65128B1CEC20011FF7D /* Assets.xcassets in Resources */,
 				593C9C1628B86A09005F5B16 /* aapl.csv in Resources */,
+				593C9C1D28BBF5F7005F5B16 /* temperatures.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +174,7 @@
 			files = (
 				596AB64F28B1CEC10011FF7D /* ContentView.swift in Sources */,
 				596AB64D28B1CEC10011FF7D /* Charts_01App.swift in Sources */,
+				593C9C1F28BBF60C005F5B16 /* D3BandChart.swift in Sources */,
 				596AB65E28B2A13B0011FF7D /* D3Histogram.swift in Sources */,
 				593C9C1828B86B0C005F5B16 /* D3Area.swift in Sources */,
 			);
