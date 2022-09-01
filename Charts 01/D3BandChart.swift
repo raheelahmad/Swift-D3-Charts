@@ -53,6 +53,7 @@ struct D3BandChart: View {
                 yStart: .value("Low", temp.low),
                 yEnd: .value("Low", temp.high)
             )
+            .interpolationMethod(.stepCenter)
         }
         .chartYAxis {
             AxisMarks(
