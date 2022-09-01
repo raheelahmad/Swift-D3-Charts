@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum Example: String, View, CaseIterable, Identifiable {
-    case histogram, area, bandChart
+    case histogram, area, bandChart, areaDifference
 
     var id: String {
         rawValue
@@ -22,6 +22,8 @@ enum Example: String, View, CaseIterable, Identifiable {
             D3Area.sample
         case .bandChart:
             D3BandChart.sample
+        case .areaDifference:
+            D3DifferenceChart.sample
         }
     }
 }
