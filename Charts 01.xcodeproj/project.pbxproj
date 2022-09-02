@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5924676C28C08062001B35B1 /* weather.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5924676B28C08062001B35B1 /* weather.csv */; };
 		5924676E28C0807F001B35B1 /* D3DifferenceChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924676D28C0807F001B35B1 /* D3DifferenceChart.swift */; };
+		5924677128C1B56F001B35B1 /* Chart+Axis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924677028C1B56F001B35B1 /* Chart+Axis.swift */; };
 		593C9C1628B86A09005F5B16 /* aapl.csv in Resources */ = {isa = PBXBuildFile; fileRef = 593C9C1528B86A09005F5B16 /* aapl.csv */; };
 		593C9C1828B86B0C005F5B16 /* D3Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C9C1728B86B0C005F5B16 /* D3Area.swift */; };
 		593C9C1B28B86BBB005F5B16 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 593C9C1A28B86BBB005F5B16 /* SwiftCSV */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		5924676B28C08062001B35B1 /* weather.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = weather.csv; sourceTree = "<group>"; };
 		5924676D28C0807F001B35B1 /* D3DifferenceChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3DifferenceChart.swift; sourceTree = "<group>"; };
+		5924677028C1B56F001B35B1 /* Chart+Axis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Chart+Axis.swift"; sourceTree = "<group>"; };
 		593C9C1528B86A09005F5B16 /* aapl.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aapl.csv; sourceTree = "<group>"; };
 		593C9C1728B86B0C005F5B16 /* D3Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3Area.swift; sourceTree = "<group>"; };
 		593C9C1C28BBF5F7005F5B16 /* temperatures.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = temperatures.csv; sourceTree = "<group>"; };
@@ -49,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5924676F28C1B55E001B35B1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5924677028C1B56F001B35B1 /* Chart+Axis.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		593C9C1428B869FA005F5B16 /* data */ = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +92,7 @@
 				593C9C1E28BBF60C005F5B16 /* D3BandChart.swift */,
 				596AB64E28B1CEC10011FF7D /* ContentView.swift */,
 				596AB65D28B2A13B0011FF7D /* D3Histogram.swift */,
+				5924676F28C1B55E001B35B1 /* Helpers */,
 				593C9C1728B86B0C005F5B16 /* D3Area.swift */,
 				5924676D28C0807F001B35B1 /* D3DifferenceChart.swift */,
 				593C9C1428B869FA005F5B16 /* data */,
@@ -180,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				596AB64F28B1CEC10011FF7D /* ContentView.swift in Sources */,
+				5924677128C1B56F001B35B1 /* Chart+Axis.swift in Sources */,
 				596AB64D28B1CEC10011FF7D /* Charts_01App.swift in Sources */,
 				5924676E28C0807F001B35B1 /* D3DifferenceChart.swift in Sources */,
 				593C9C1F28BBF60C005F5B16 /* D3BandChart.swift in Sources */,

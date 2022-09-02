@@ -8,35 +8,6 @@
 import SwiftUI
 import Charts
 
-extension View {
-    var d3YAxis: some View {
-        chartYAxis {
-            AxisMarks(
-                preset: .extended,
-                position: .leading,
-                values: .automatic(
-                    desiredCount: 11, roundLowerBound: true, roundUpperBound: false
-                )
-            ) { _ in
-                AxisValueLabel()
-                    .font(.caption2)
-                AxisTick(centered: false, length: 8, stroke: .init(lineWidth: 0.7))
-                AxisGridLine(centered: true, stroke: .init(lineWidth: 0.5))
-                    .foregroundStyle(.gray.opacity(0.4))
-            }
-        }
-    }
-
-    func d3YAxisLabel(_ text: String) -> some View {
-        chartYAxisLabel {
-            HStack(spacing: 4) {
-                Text("↑")
-                Text(text)
-            }.offset(x: -10, y: -10)
-        }
-    }
-}
-
 /// Recreating the two Histograms from the introductory [D3-Charts](https://observablehq.com/@d3/charts?collection=@d3/charts) notebook.
 struct D3Histogram: View {
     enum Style: String, CaseIterable, Identifiable {
