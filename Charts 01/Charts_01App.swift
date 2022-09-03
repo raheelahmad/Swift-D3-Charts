@@ -8,7 +8,7 @@
 import SwiftUI
 
 enum Example: String, View, CaseIterable, Identifiable {
-    case histogram, area, bandChart, areaDifference
+    case histogram, area, bandChart, areaDifference, divergingChart
 
     var id: String {
         rawValue
@@ -24,13 +24,15 @@ enum Example: String, View, CaseIterable, Identifiable {
             D3BandChart.sample
         case .areaDifference:
             D3DifferenceChart.sample
+        case .divergingChart:
+            D3DivergingBarChart.sample
         }
     }
 }
 
 @main
 struct Charts_01App: App {
-    @State private var example = Example.area
+    @State private var example = Example.divergingChart
     var body: some Scene {
         WindowGroup {
             HSplitView {
