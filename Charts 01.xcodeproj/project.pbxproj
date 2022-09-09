@@ -24,6 +24,7 @@
 		596AB65128B1CEC20011FF7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596AB65028B1CEC20011FF7D /* Assets.xcassets */; };
 		596AB65528B1CEC20011FF7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596AB65428B1CEC20011FF7D /* Preview Assets.xcassets */; };
 		596AB65E28B2A13B0011FF7D /* D3Histogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AB65D28B2A13B0011FF7D /* D3Histogram.swift */; };
+		5987558428CB048F00EBF4B7 /* D3BarChartTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5987558328CB048F00EBF4B7 /* D3BarChartTransitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		596AB65228B1CEC20011FF7D /* Charts_01.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Charts_01.entitlements; sourceTree = "<group>"; };
 		596AB65428B1CEC20011FF7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		596AB65D28B2A13B0011FF7D /* D3Histogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3Histogram.swift; sourceTree = "<group>"; };
+		5987558328CB048F00EBF4B7 /* D3BarChartTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3BarChartTransitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				593C9C1E28BBF60C005F5B16 /* D3BandChart.swift */,
 				596AB64E28B1CEC10011FF7D /* ContentView.swift */,
 				596AB65D28B2A13B0011FF7D /* D3Histogram.swift */,
+				5987558328CB048F00EBF4B7 /* D3BarChartTransitions.swift */,
 				5924677428C1B637001B35B1 /* D3DivergingBarChart.swift */,
 				5924676F28C1B55E001B35B1 /* Helpers */,
 				593C9C1728B86B0C005F5B16 /* D3Area.swift */,
@@ -206,6 +209,7 @@
 			files = (
 				596AB64F28B1CEC10011FF7D /* ContentView.swift in Sources */,
 				5924677528C1B637001B35B1 /* D3DivergingBarChart.swift in Sources */,
+				5987558428CB048F00EBF4B7 /* D3BarChartTransitions.swift in Sources */,
 				5924677128C1B56F001B35B1 /* Chart+Axis.swift in Sources */,
 				596AB64D28B1CEC10011FF7D /* Charts_01App.swift in Sources */,
 				5924676E28C0807F001B35B1 /* D3DifferenceChart.swift in Sources */,

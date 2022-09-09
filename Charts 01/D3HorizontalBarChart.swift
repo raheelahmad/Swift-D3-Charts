@@ -106,7 +106,7 @@ fileprivate struct ShortPercentageDoubleStyle: FormatStyle {
 
 // ---
 
-fileprivate struct AlphabetFrequency: Identifiable {
+struct AlphabetFrequency: Identifiable {
     let letter: String
     let frequency: Double
 
@@ -115,7 +115,7 @@ fileprivate struct AlphabetFrequency: Identifiable {
     var isTiny: Bool { frequency < 0.01 }
 }
 
-private func alphabetsCSV() -> [AlphabetFrequency] {
+func alphabetsCSV() -> [AlphabetFrequency] {
     let csv = try! NamedCSV(url: Bundle.main.url(forResource: "alphabet", withExtension: "csv")!)
     let rows: [AlphabetFrequency] = csv.rows.compactMap { row in
         guard
