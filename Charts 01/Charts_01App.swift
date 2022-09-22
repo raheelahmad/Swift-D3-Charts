@@ -9,7 +9,7 @@ import SwiftUI
 
 enum Example: String, View, CaseIterable, Identifiable {
     case histogram, area, bandChart, areaDifference, divergingChart, horizontalBarChart
-    case barChartTransitions, beeswarm
+    case barChartTransitions, beeswarm, boxPlot
 
     var id: String {
         rawValue
@@ -33,13 +33,15 @@ enum Example: String, View, CaseIterable, Identifiable {
             D3BarChartTransitions.sample
         case .beeswarm:
             D3Beeswarm.sample
+        case .boxPlot:
+            D3BoxPlot.sample
         }
     }
 }
 
 @main
 struct Charts_01App: App {
-    @State private var example = Example.beeswarm
+    @State private var example = Example.boxPlot
     
     var body: some Scene {
         WindowGroup {

@@ -16,6 +16,8 @@
 		5924677528C1B637001B35B1 /* D3DivergingBarChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5924677428C1B637001B35B1 /* D3DivergingBarChart.swift */; };
 		5939879628D00A2D003D4B64 /* D3Beeswarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939879528D00A2D003D4B64 /* D3Beeswarm.swift */; };
 		5939879828D00BA9003D4B64 /* cars-2.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5939879728D00BA9003D4B64 /* cars-2.csv */; };
+		5939879A28D2EF8C003D4B64 /* diamonds.csv in Resources */ = {isa = PBXBuildFile; fileRef = 5939879928D2EF8C003D4B64 /* diamonds.csv */; };
+		5939879C28D2EFB1003D4B64 /* D3BoxPlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5939879B28D2EFB1003D4B64 /* D3BoxPlot.swift */; };
 		593C9C1628B86A09005F5B16 /* aapl.csv in Resources */ = {isa = PBXBuildFile; fileRef = 593C9C1528B86A09005F5B16 /* aapl.csv */; };
 		593C9C1828B86B0C005F5B16 /* D3Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C9C1728B86B0C005F5B16 /* D3Area.swift */; };
 		593C9C1B28B86BBB005F5B16 /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 593C9C1A28B86BBB005F5B16 /* SwiftCSV */; };
@@ -39,6 +41,8 @@
 		5924677428C1B637001B35B1 /* D3DivergingBarChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3DivergingBarChart.swift; sourceTree = "<group>"; };
 		5939879528D00A2D003D4B64 /* D3Beeswarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3Beeswarm.swift; sourceTree = "<group>"; };
 		5939879728D00BA9003D4B64 /* cars-2.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "cars-2.csv"; sourceTree = "<group>"; };
+		5939879928D2EF8C003D4B64 /* diamonds.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = diamonds.csv; sourceTree = "<group>"; };
+		5939879B28D2EFB1003D4B64 /* D3BoxPlot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3BoxPlot.swift; sourceTree = "<group>"; };
 		593C9C1528B86A09005F5B16 /* aapl.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = aapl.csv; sourceTree = "<group>"; };
 		593C9C1728B86B0C005F5B16 /* D3Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3Area.swift; sourceTree = "<group>"; };
 		593C9C1C28BBF5F7005F5B16 /* temperatures.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = temperatures.csv; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		593C9C1428B869FA005F5B16 /* data */ = {
 			isa = PBXGroup;
 			children = (
+				5939879928D2EF8C003D4B64 /* diamonds.csv */,
 				590E4CFE28C6B2FF005846FD /* alphabet.csv */,
 				5924677228C1B620001B35B1 /* state-population-2010-2019.csv */,
 				5924676B28C08062001B35B1 /* weather.csv */,
@@ -111,6 +116,7 @@
 				596AB65D28B2A13B0011FF7D /* D3Histogram.swift */,
 				5939879528D00A2D003D4B64 /* D3Beeswarm.swift */,
 				5987558328CB048F00EBF4B7 /* D3BarChartTransitions.swift */,
+				5939879B28D2EFB1003D4B64 /* D3BoxPlot.swift */,
 				5924677428C1B637001B35B1 /* D3DivergingBarChart.swift */,
 				5924676F28C1B55E001B35B1 /* Helpers */,
 				593C9C1728B86B0C005F5B16 /* D3Area.swift */,
@@ -203,6 +209,7 @@
 				5939879828D00BA9003D4B64 /* cars-2.csv in Resources */,
 				590E4CFF28C6B2FF005846FD /* alphabet.csv in Resources */,
 				5924677328C1B620001B35B1 /* state-population-2010-2019.csv in Resources */,
+				5939879A28D2EF8C003D4B64 /* diamonds.csv in Resources */,
 				593C9C1D28BBF5F7005F5B16 /* temperatures.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5939879628D00A2D003D4B64 /* D3Beeswarm.swift in Sources */,
+				5939879C28D2EFB1003D4B64 /* D3BoxPlot.swift in Sources */,
 				596AB64F28B1CEC10011FF7D /* ContentView.swift in Sources */,
 				5924677528C1B637001B35B1 /* D3DivergingBarChart.swift in Sources */,
 				5987558428CB048F00EBF4B7 /* D3BarChartTransitions.swift in Sources */,
