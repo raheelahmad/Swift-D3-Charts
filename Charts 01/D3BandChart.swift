@@ -84,8 +84,15 @@ struct D3BandChart: View {
         .padding()
     }
 
+    private var link: some View {
+        D3LinkView(url: URL(string: "https://observablehq.com/@d3/band-chart?collection=@d3/charts")!)
+    }
+
     var body: some View {
-        chart
+        VStack {
+            link
+            chart
+        }.padding()
     }
 }
 

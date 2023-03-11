@@ -78,8 +78,13 @@ struct D3Histogram: View {
 
     }
 
+    private var link: some View {
+        D3LinkView(url: URL(string: "https://observablehq.com/@d3/charts?collection=@d3/charts")!)
+    }
+
     var body: some View {
         VStack(alignment: .leading, spacing: 21) {
+            link
             chart
             Divider()
             stylePicker

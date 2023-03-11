@@ -81,8 +81,13 @@ struct D3BoxPlot: View {
         }
     }
 
+    private var link: some View {
+        D3LinkView(url: URL(string: "https://observablehq.com/@d3/box-plot?collection=@d3/charts")!)
+    }
+
     var body: some View {
         VStack(alignment: .leading) {
+            link
             chart
                 .padding(20)
         }

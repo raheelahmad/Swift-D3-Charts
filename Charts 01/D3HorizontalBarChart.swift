@@ -73,10 +73,18 @@ struct D3HorizontalBarChart: View {
         }
     }
 
+
+    private var link: some View {
+        D3LinkView(url: URL(string: "https://observablehq.com/@d3/horizontal-bar-chart?collection=@d3/charts")!)
+    }
+
     var body: some View {
-        chart
-            .padding(.horizontal)
-            .padding(.vertical)
+        VStack {
+            link
+            chart
+        }
+        .padding(.horizontal)
+        .padding(.vertical)
     }
 }
 

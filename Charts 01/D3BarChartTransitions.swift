@@ -109,8 +109,13 @@ struct D3BarChartTransitions: View {
         }.fixedSize()
     }
 
+    private var link: some View {
+        D3LinkView(url: URL(string: "https://observablehq.com/@d3/bar-chart-transitions?collection=@d3/charts")!)
+    }
+
     var body: some View {
         VStack(alignment: .leading) {
+            link
             picker
             chart
                 .padding()

@@ -58,8 +58,15 @@ struct D3Area: View {
         .d3YAxisLabel("Daily Close ($)")
     }
 
+    private var link: some View {
+        D3LinkView(url: URL(string: "https://observablehq.com/@d3/area-chart?collection=@d3/charts")!)
+    }
+
     var body: some View {
-        chart
+        VStack {
+            link
+            chart
+        }
             .padding()
     }
 }

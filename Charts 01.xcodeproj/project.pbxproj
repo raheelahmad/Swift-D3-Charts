@@ -29,6 +29,7 @@
 		596AB65528B1CEC20011FF7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 596AB65428B1CEC20011FF7D /* Preview Assets.xcassets */; };
 		596AB65E28B2A13B0011FF7D /* D3Histogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 596AB65D28B2A13B0011FF7D /* D3Histogram.swift */; };
 		5987558428CB048F00EBF4B7 /* D3BarChartTransitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5987558328CB048F00EBF4B7 /* D3BarChartTransitions.swift */; };
+		59AF8DB429BD12BA00F90395 /* D3LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59AF8DB329BD12BA00F90395 /* D3LinkView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		596AB65428B1CEC20011FF7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		596AB65D28B2A13B0011FF7D /* D3Histogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3Histogram.swift; sourceTree = "<group>"; };
 		5987558328CB048F00EBF4B7 /* D3BarChartTransitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3BarChartTransitions.swift; sourceTree = "<group>"; };
+		59AF8DB329BD12BA00F90395 /* D3LinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = D3LinkView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 				593C9C1E28BBF60C005F5B16 /* D3BandChart.swift */,
 				596AB64E28B1CEC10011FF7D /* ContentView.swift */,
 				596AB65D28B2A13B0011FF7D /* D3Histogram.swift */,
+				59AF8DB329BD12BA00F90395 /* D3LinkView.swift */,
 				5939879528D00A2D003D4B64 /* D3Beeswarm.swift */,
 				5987558328CB048F00EBF4B7 /* D3BarChartTransitions.swift */,
 				5939879B28D2EFB1003D4B64 /* D3BoxPlot.swift */,
@@ -232,6 +235,7 @@
 				593C9C1F28BBF60C005F5B16 /* D3BandChart.swift in Sources */,
 				596AB65E28B2A13B0011FF7D /* D3Histogram.swift in Sources */,
 				590E4D0128C6B34B005846FD /* D3HorizontalBarChart.swift in Sources */,
+				59AF8DB429BD12BA00F90395 /* D3LinkView.swift in Sources */,
 				593C9C1828B86B0C005F5B16 /* D3Area.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

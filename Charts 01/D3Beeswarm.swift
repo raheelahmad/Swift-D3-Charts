@@ -97,11 +97,18 @@ struct D3Beeswarm: View {
         .padding(.vertical, 20)
     }
 
+    private var link: some View {
+        D3LinkView(url: URL(string: "https://observablehq.com/@d3/beeswarm?collection=@d3/charts")!)
+    }
+
     var body: some View {
         VStack {
+            link
             Spacer()
             chart
         }
+        .padding(.horizontal)
+        .padding(.vertical)
     }
 }
 
