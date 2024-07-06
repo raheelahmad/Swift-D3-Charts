@@ -53,7 +53,7 @@ struct D3BarChartTransitions: View {
     @State var alphabets: [AlphabetFrequency]
     @State private var sorting = Sorting.freqDesc
 
-    private let timer = Timer.publish(every: 5, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 3, on: .main, in: .common).autoconnect()
 
 
     @Environment(\.colorScheme) var colorScheme

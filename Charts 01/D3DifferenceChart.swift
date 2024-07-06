@@ -59,7 +59,7 @@ struct D3DifferenceChart: View {
 
             ForEach(weather) { temp in
                 LineMark(x: .value("a", temp.date), y: .value("m", temp.nyc < temp.sf ? temp.nyc : temp.sf), series: .value("nyc-line", "nyc-line"))
-                    .foregroundStyle(Color.white)
+                    .foregroundStyle(Color.primary)
                     .lineStyle(.init(lineWidth: 1.0))
                     .interpolationMethod(.stepCenter)
             }

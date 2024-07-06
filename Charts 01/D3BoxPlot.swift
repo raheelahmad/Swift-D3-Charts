@@ -14,7 +14,6 @@ struct D3BoxPlot: View {
 
     @Environment(\.colorScheme) var colorScheme
 
-    private let boxWidth: Double = 40.0
     private var chart: some View {
         Chart {
             ForEach(prices) { binnedPrices in
@@ -33,7 +32,7 @@ struct D3BoxPlot: View {
                         x: .value("Alphabet", binnedPrices.x),
                         yStart: .value("3rd Quartile", binnedPrices.firstQuartile),
                         yEnd: .value("1st Quartile", binnedPrices.thirdQuartile),
-                        width: 30
+                        width: 20
                     ).foregroundStyle(colorScheme == .dark ? Color(white: 0.4) : Color(white: 0.7))
                 }
 
@@ -42,7 +41,7 @@ struct D3BoxPlot: View {
                         x: .value("Alphabet", binnedPrices.x),
                         yStart: .value("1st Quartile", binnedPrices.median),
                         yEnd: .value("Minimum", binnedPrices.median + 20),
-                        width: 30
+                        width: 20
                     ).foregroundStyle(colorScheme == .dark ? Color.white : Color.black)
 
                 }
