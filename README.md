@@ -2,7 +2,8 @@
 
 [D3](https://d3js.org) is a powerful library for visualizing information. A common use case is building very flexible charting solutions.
 
-I wanted to take Apple's [Swift Charts](https://developer.apple.com/documentation/charts) for a spin, and see how much of the common D3 visualizations I could faithfully replicate.
+I learnt Apple's [Swift Charts](https://developer.apple.com/documentation/charts) while building the statistics view for my music app [Muziqi for iOS](https://sakunlabs.com/muziqi).
+But then I wanted to take the library for a more serious spin, and see how much of the common D3 visualizations I could faithfully replicate.
 
 This macOS project is a sample of my efforts. I would say I got close to 99% there, and the rest 1% was me wanting to wrap up my timebox on this project, rather than Swift Charts' shortcomings.
 
